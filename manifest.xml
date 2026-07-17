@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<PluginManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>BuiltBy</Name>
+  <Guid>3f31c4ce-23ad-44d5-984c-cd65bb0cc552</Guid>
+  <Version>v3.2.1</Version>
+</PluginManifest>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>BuiltBy</AssemblyName>
+    <RootNamespace>BuiltBy</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BuiltByPlugin.cs" />
+    <Compile Include="BuiltByControl.cs" />
+    <Compile Include="BuiltByCommands.cs" />
+    <Compile Include="AstronautIdentityCleaner.cs" />
+    <Compile Include="BuiltByText.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Torch.API" HintPath="D:\torch-serverRTech\Torch.API.dll" />
+    <Reference Include="Torch" HintPath="D:\torch-serverRTech\Torch.dll" />
+    <Reference Include="NLog" HintPath="D:\torch-serverRTech\NLog.dll" />
+    <Reference Include="Sandbox.Common" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\Sandbox.Common.dll" />
+    <Reference Include="Sandbox.Game" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\Sandbox.Game.dll" />
+    <Reference Include="SpaceEngineers.Game" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\SpaceEngineers.Game.dll" />
+    <Reference Include="VRage" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\VRage.dll" />
+    <Reference Include="VRage.Game" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\VRage.Game.dll" />
+    <Reference Include="VRage.Library" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\VRage.Library.dll" />
+    <Reference Include="VRage.Math" HintPath="D:\SteamLibrary\steamapps\common\SpaceEngineers\Bin64\VRage.Math.dll" />
+  </ItemGroup>
+</Project>
