@@ -1,14 +1,19 @@
 # BuiltBy+
 
-Torch plugin for Space Engineers.
+Torch plugin for Space Engineers servers.
 
-This plugin prepares NPC grids so their blocks have proper BuiltBy ownership.  
-It was created as a workaround for NPC grids spawned without proper block authorship.
+BuiltBy is the game mechanic that stores who originally built a block.  
+This is separate from block ownership.
 
-## Version
+The plugin fixes MES-spawned NPC grids where blocks have no proper BuiltBy value.  
+It assigns BuiltBy to the NPC faction founder and enables the NPC claim button, similar to Prototech / The Factorum structures.
 
-Source for BuiltBy v3.2.1.
+After a player claims the NPC grid, the blocks are transferred correctly and count toward the player's PCU instead of being treated as free blocks.
 
-## Notes
+## Temporary Astronaut cleanup
 
-This version is shared as-is for testing and review.
+The plugin also includes a temporary cleanup tool for duplicated NPC Astronaut identities.
+
+It removes old duplicated offline Astronaut identity records from the save and keeps the active Astronaut identities used by the game.
+
+This was added as a temporary workaround for servers affected by duplicated Astronaut records.
